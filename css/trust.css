@@ -1,0 +1,142 @@
+/* =========================
+   TRUST / CLIENT FIRST SECTION
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.trust-section{
+    background: linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.92)),
+                url('images/law-bg.jpg') center/cover no-repeat;
+    padding: 100px 8%;
+    color: #fff;
+}
+
+/* Header */
+
+.trust-header{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.trust-header h2{
+    font-size: 56px;
+    font-family: Georgia, serif;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.trust-header p{
+    font-size: 18px;
+    color: #d0d0d0;
+    line-height: 1.9;
+}
+
+/* =========================
+   GRID LAYOUT (3 x 2)
+========================= */
+
+.trust-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Cards */
+
+.trust-card{
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,193,7,0.15);
+    border-radius: 18px;
+    padding: 35px 25px;
+    text-align: center;
+    transition: 0.4s ease;
+    backdrop-filter: blur(8px);
+}
+
+.trust-card:hover{
+    transform: translateY(-10px);
+    border-color: #ffc107;
+    box-shadow: 0 18px 35px rgba(255,193,7,0.08);
+}
+
+/* Icon */
+
+.trust-icon{
+    width: 72px;
+    height: 72px;
+    margin: auto;
+    margin-bottom: 22px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,193,7,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trust-icon i{
+    font-size: 28px;
+    color: #ffc107;
+}
+
+/* Text */
+
+.trust-card h3{
+    font-size: 30px;
+    font-family: Georgia, serif;
+    margin-bottom: 14px;
+    color: #fff;
+}
+
+.trust-card p{
+    font-size: 16px;
+    color: #cfcfcf;
+    line-height: 1.8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablet = 2 cards */
+@media(max-width: 992px){
+
+.trust-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.trust-header h2{
+    font-size: 44px;
+}
+
+}
+
+/* Mobile = 1 card */
+@media(max-width: 768px){
+
+.trust-section{
+    padding: 70px 5%;
+}
+
+.trust-container{
+    grid-template-columns: 1fr;
+}
+
+.trust-header h2{
+    font-size: 38px;
+}
+
+.trust-header p{
+    font-size: 16px;
+}
+
+.trust-card h3{
+    font-size: 24px;
+}
+
+}

@@ -1,0 +1,121 @@
+/* CONTACT SECTION CSS */
+
+#contact {
+    width: 100%;
+    min-height: 100vh;
+    background: #0f0f0f;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Box */
+#contact > div {
+    width: 100%;
+    max-width: 750px;
+    background: #1a1a1a;
+    padding: 50px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* Heading */
+#contact h2 {
+    font-size: 42px;
+    color: #f4c542;
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+/* Subheading */
+#contact p {
+    text-align: center;
+    color: #d8d8d8;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+/* Form Layout */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* Each Field */
+#contactForm div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+#contactForm label {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Inputs + Textarea */
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Focus Effect */
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #f4c542;
+    box-shadow: 0 0 8px rgba(244,197,66,0.25);
+}
+
+/* Placeholder */
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+    color: #9a9a9a;
+}
+
+/* Button */
+#contactForm button {
+    width: 100%;
+    padding: 15px;
+    background: #f4c542;
+    color: #111;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover */
+#contactForm button:hover {
+    background: #ffd861;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #contact > div {
+        padding: 30px 22px;
+    }
+
+    #contact h2 {
+        font-size: 32px;
+    }
+
+    #contact p {
+        font-size: 16px;
+    }
+}

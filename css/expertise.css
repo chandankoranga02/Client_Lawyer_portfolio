@@ -1,0 +1,128 @@
+/* ===================================
+        OUR EXPERTISE SECTION
+   PREMIUM UPDATED VERSION
+=================================== */
+
+.expertise-section{
+    background: linear-gradient(180deg,#050505,#0d0d0d);
+    padding: 100px 8%;
+    color: #fff;
+}
+
+/* Header */
+
+.expertise-header{
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    margin-bottom: 75px;
+}
+
+.expertise-header h2{
+    font-size: 54px;
+    font-family: Georgia, serif;
+    margin-bottom: 18px;
+    color: #ffffff;
+}
+
+.expertise-header p{
+    font-size: 18px;
+    line-height: 1.9;
+    color: #c9c9c9;
+}
+
+/* Grid */
+
+.expertise-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Cards */
+
+.expertise-card{
+    background: linear-gradient(180deg,#141414,#0f0f0f);
+    border: 1px solid rgba(255,193,7,0.14);
+    border-radius: 18px;
+    padding: 48px 28px;      /* increased height */
+    min-height: 330px;       /* fixed better height */
+    text-align: center;
+    transition: 0.4s ease;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.expertise-card:hover{
+    transform: translateY(-12px);
+    border-color: #ffc107;
+    box-shadow: 0 20px 40px rgba(255,193,7,0.12);
+    background: linear-gradient(180deg,#191919,#111111);
+}
+
+/* Icon */
+
+.expertise-card i{
+    font-size: 38px;
+    color: #ffc107;
+    margin-bottom: 22px;
+}
+
+/* Text */
+
+.expertise-card h3{
+    font-size: 28px;
+    font-family: Georgia, serif;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.expertise-card p{
+    font-size: 15px;
+    line-height: 1.9;
+    color: #d2d2d2;
+}
+
+/* Tablet */
+
+@media(max-width:1100px){
+
+.expertise-container{
+    grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.expertise-section{
+    padding: 70px 5%;
+}
+
+.expertise-container{
+    grid-template-columns: 1fr;
+}
+
+.expertise-header h2{
+    font-size: 38px;
+}
+
+.expertise-header p{
+    font-size: 16px;
+}
+
+.expertise-card{
+    min-height: auto;
+    padding: 38px 24px;
+}
+
+.expertise-card h3{
+    font-size: 24px;
+}
+
+}
