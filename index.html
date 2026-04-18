@@ -20,56 +20,59 @@
 
 <body>
 
-<nav class="navbar">
+  <nav class="navbar">
 
     <!-- Left -->
     <div class="nav-left">
+      <a href="#" class="logo-wrap">
 
-        <a href="#" class="logo-wrap">
+        <div class="logo-icon">
+          <i class="fas fa-gavel"></i>
+        </div>
 
-            <div class="logo-text">
-                <h2>GraySuit World</h2>
-                <span>Law Syndicate</span>
-            </div>
+        <div class="logo-text">
+          <h2>GraySuit World</h2>
+          <span>Law Syndicate</span>
+        </div>
 
-            <div class="logo-icon">
-                <i class="fas fa-gavel"></i>
-            </div>
-
-        </a>
-
+      </a>
     </div>
 
-    <!-- Right -->
+    <!-- Right Links -->
     <div class="nav-right">
-        <a href="#hero">Home</a>
-        <a href="#faq">FAQ</a>
-        <a href="#expertise">Expertise In</a>
-        <a href="#contact">Contact Us</a>
+      <a href="#hero">Home</a>
+      <a href="#faq">FAQ</a>
+      <a href="#expertise">Expertise In</a>
+      <a href="#contact">Contact Us</a>
     </div>
 
-</nav>
+    <!-- Mobile Toggle -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
 
-
+  </nav>
   <section class="hero" id="hero">
 
-    <!-- Background Slider Images -->
-    <div class="slider">
-      <div class="slide active" style="background-image: url('assets/hcourt.png');"></div>
-      <div class="slide"
-        style="background-image: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1920&q=80');">
-      </div>
-      <div class="slide" style="background-image: url('assets/parliament.webp');"></div>
-      <div class="slide" style="background-image: url('assets/supremecourt.jpg');"></div>
-    </div>
-
-    <!-- Overlay -->
-    <div class="overlay"></div>
-
-    <!-- Hero Content -->
     <div class="hero-content">
-      <h1 class="hero-title">Trusted Legal Solutions</h1>
-      <p class="hero-subtitle">Professional Advocacy, Honest Guidance, and Strong Representation for Your Rights.</p>
+
+      <span class="hero-tagline">Modern Legal Excellence</span>
+
+      <h1 class="hero-title">
+        Trusted Counsel <br>
+        Powerful Representation
+      </h1>
+
+      <p class="hero-subtitle">
+        Strategic legal solutions crafted with integrity, clarity,
+        and results for modern clients.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Book Consultation</a>
+        <a href="#expertise" class="btn-secondary">Our Expertise</a>
+      </div>
+
     </div>
 
   </section>
@@ -79,80 +82,59 @@
   <section class="trust-section">
 
     <div class="trust-header">
+      <span class="trust-label">Why Choose Us</span>
       <h2>Client-First Approach</h2>
-      <p>
-        We believe true legal service is not only about cases and courtrooms.
-        It is about protecting rights, reputation, peace of mind, and future.
-        Every client deserves clarity, respect, honesty, and committed representation.
-      </p>
+
     </div>
 
-    <div class="trust-container">
+    <div class="trust-timeline">
 
-      <!-- Card 1 -->
-      <div class="trust-card">
-        <div class="trust-icon">
-          <i class="fas fa-chess-king"></i>
+      <div class="trust-item">
+        <div class="trust-number">01</div>
+        <div class="trust-content">
+          <h3>Strategic Guidance</h3>
+          <p>Every matter requires smart planning, sharp analysis, and practical execution.</p>
         </div>
-        <h3>Strategic Guidance</h3>
-        <p>
-          Every matter requires smart planning, sharp analysis, and practical execution.
-        </p>
       </div>
 
-      <!-- Card 2 -->
-      <div class="trust-card">
-        <div class="trust-icon">
-          <i class="fas fa-handshake"></i>
+      <div class="trust-item">
+        <div class="trust-number">02</div>
+        <div class="trust-content">
+          <h3>Trusted Partnership</h3>
+          <p>We stand beside our clients with honesty, updates, and complete support.</p>
         </div>
-        <h3>Trusted Partnership</h3>
-        <p>
-          We stand beside our clients with honesty, updates, and complete support.
-        </p>
       </div>
 
-      <!-- Card 3 -->
-      <div class="trust-card">
-        <div class="trust-icon">
-          <i class="fas fa-award"></i>
+      <div class="trust-item">
+        <div class="trust-number">03</div>
+        <div class="trust-content">
+          <h3>Proven Excellence</h3>
+          <p>Our reputation is built on discipline, ethics, consistency, and results.</p>
         </div>
-        <h3>Proven Excellence</h3>
-        <p>
-          Our reputation is built on discipline, ethics, consistency, and results.
-        </p>
       </div>
 
-      <!-- Card 4 -->
-      <div class="trust-card">
-        <div class="trust-icon">
-          <i class="fas fa-user-shield"></i>
+      <div class="trust-item">
+        <div class="trust-number">04</div>
+        <div class="trust-content">
+          <h3>Confidential Handling</h3>
+          <p>Sensitive matters are managed with privacy, trust, and professional discretion.</p>
         </div>
-        <h3>Confidential Handling</h3>
-        <p>
-          Sensitive matters are managed with privacy, trust, and professional discretion.
-        </p>
       </div>
 
-      <!-- Card 5 -->
-      <div class="trust-card">
-        <div class="trust-icon">
-          <i class="fas fa-clock"></i>
+      <div class="trust-item">
+        <div class="trust-number">05</div>
+        <div class="trust-content">
+          <h3>Timely Action</h3>
+          <p>Legal delay can cost heavily. We value punctuality and fast response.</p>
         </div>
-        <h3>Timely Action</h3>
-        <p>
-          Legal delay can cost heavily. We value punctuality and fast response.
-        </p>
       </div>
 
-      <!-- Card 6 -->
-      <div class="trust-card">
-        <div class="trust-icon">
-          <i class="fas fa-balance-scale"></i>
+      <div class="trust-item">
+        <div class="trust-number">06</div>
+        <div class="trust-content">
+          <h3>Justice Focused</h3>
+          <p>Our mission is to protect fairness, rights, and lawful outcomes.</p>
         </div>
-        <h3>Justice Focused</h3>
-        <p>
-          Our mission is to protect fairness, rights, and lawful outcomes.
-        </p>
       </div>
 
     </div>
@@ -165,8 +147,8 @@
   <section class="expertise-section reveal" id="expertise">
 
     <div class="expertise-header">
-      <h2    >Our Expertise</h2>
-      <p >
+      <h2>OUR EXEPERTISE</h2>
+      <p>
         Delivering strategic legal solutions across litigation, advisory,
         compliance, and documentation with precision and professionalism.
       </p>
@@ -228,12 +210,55 @@
 
 
 
+
+  <section id="contact">
+    <div>
+      <h2>Contact Us</h2>
+      <p>Have a question or project idea? Send us a message.</p>
+
+      <form id="contactForm">
+
+        <div>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+        </div>
+
+        <div>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Enter subject" required />
+        </div>
+
+        <div>
+          <label for="mobile">Mobile Number</label>
+          <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number" required />
+        </div>
+
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Send Message</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+
   <section class="faq-section" id="faq">
 
     <div class="faq-header">
-      <h2>Frequently Asked Questions</h2>
+      <h2>Questions, Clearly Answered
+</h2>
       <p>
-        Clear answers to common legal queries. Click any question to expand.
+       Everything clients usually ask before getting started.
       </p>
     </div>
 
@@ -313,114 +338,73 @@
 
   </section>
 
-  <section id="contact">
-    <div>
-      <h2>Contact Us</h2>
-      <p>Have a question or project idea? Send us a message.</p>
-
-      <form id="contactForm">
-
-        <div>
-          <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
-        </div>
-
-        <div>
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="Enter subject" required />
-        </div>
-
-        <div>
-          <label for="mobile">Mobile Number</label>
-          <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number" required />
-        </div>
-
-        <div>
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required />
-        </div>
-
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
-        </div>
-
-        <div>
-          <button type="submit">Send Message</button>
-        </div>
-
-      </form>
-    </div>
-  </section>
-
-
-
-<footer class="footer-section">
+  <footer class="footer-section">
 
     <!-- Top 70% -->
     <div class="footer-top">
 
-        <!-- Left -->
-        <div class="footer-column brand-column">
-            <h2>GraySuit World</h2>
-            <span>Law Syndicate</span>
+      <!-- Left -->
+      <div class="footer-column brand-column">
+        <h2>GraySuit World</h2>
+        <span>Law Syndicate</span>
 
-            <p>
-                Dedicated to delivering strategic legal guidance,
-                trusted representation, and professional support
-                with integrity, precision, and commitment.
-            </p>
+        <p>
+          Dedicated to delivering strategic legal guidance,
+          trusted representation, and professional support
+          with integrity, precision, and commitment.
+        </p>
+      </div>
+
+      <!-- Middle -->
+      <div class="footer-column links-column">
+
+        <div class="footer-links-box">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
 
-        <!-- Middle -->
-        <div class="footer-column links-column">
-
-            <div class="footer-links-box">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#expertise">Expertise</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links-box">
-                <h4>Practice Areas</h4>
-                <ul>
-                    <li><a href="#">Civil Law</a></li>
-                    <li><a href="#">Criminal Defence</a></li>
-                    <li><a href="#">Property Law</a></li>
-                    <li><a href="#">Documentation</a></li>
-                </ul>
-            </div>
-
+        <div class="footer-links-box">
+          <h4>Practice Areas</h4>
+          <ul>
+            <li><a href="#">Civil Law</a></li>
+            <li><a href="#">Criminal Defence</a></li>
+            <li><a href="#">Property Law</a></li>
+            <li><a href="#">Documentation</a></li>
+          </ul>
         </div>
 
-        <!-- Right -->
-        <div class="footer-column contact-column">
-            <h4>Contact Info</h4>
+      </div>
 
-            <p><strong>Location:</strong> Delhi, India</p>
-            <p><strong>Timing:</strong> Mon - Sat | 9 AM - 7 PM</p>
-            <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
-            <p><strong>Email:</strong> legaloffice@email.com</p>
-        </div>
+      <!-- Right -->
+      <div class="footer-column contact-column">
+        <h4>Contact Info</h4>
+
+        <p><strong>Location:</strong> Delhi, India</p>
+        <p><strong>Timing:</strong> Mon - Sat | 9 AM - 7 PM</p>
+        <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+        <p><strong>Email:</strong> legaloffice@email.com</p>
+      </div>
 
     </div>
 
     <!-- Bottom 30% -->
     <div class="footer-bottom">
-        <p>© 2026 GraySuit World | All Rights Reserved.</p>
+      <p>© 2026 GraySuit World | All Rights Reserved.</p>
     </div>
 
-</footer>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="Js/hero.js"></script>
   <script src="Js/faq.js"></script>
   <script src="Js/scrollAnimation.js"></script>
-    <script src="Js/navbar.js"></script>
+  <script src="Js/navbar.js"></script>
+  <script src="Js/gsap.js"></script>
 
 </body>
 
