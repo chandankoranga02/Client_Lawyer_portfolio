@@ -120,3 +120,87 @@
 }
 
 }
+
+/* ===== FAQ GAP FIX (Single Copy Paste - END of faq.css) ===== */
+
+.faq-section{
+    padding:45px 8% 90px ;   /* top gap reduced */
+    margin-top:0 ;
+}
+
+/* Header tighter */
+.faq-header{
+    margin-bottom:38px ;
+}
+
+.faq-header h2{
+    margin-top:0 ;
+    margin-bottom:10px ;
+    line-height:1.05 ;
+}
+
+.faq-header p{
+    margin-top:0 ;
+}
+
+/* ===== TABLET ===== */
+@media(max-width:992px){
+
+    .faq-section{
+        padding:28px 6% 75px ;
+    }
+
+    .faq-header{
+        margin-bottom:30px ;
+    }
+
+    .faq-header h2{
+        font-size:42px ;
+    }
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+
+    .faq-section{
+        padding:10px 5% 55px ;   /* almost no top gap */
+    }
+
+    .faq-header{
+        margin-bottom:24px ;
+    }
+
+    .faq-header h2{
+        font-size:34px ;
+        margin-bottom:8px ;
+    }
+
+    .faq-header p{
+        font-size:15px ;
+        line-height:1.65 ;
+    }
+
+    .faq-item{
+        margin-bottom:14px ;
+    }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media(max-width:480px){
+
+    .faq-section{
+        padding:0px 14px 45px ;
+    }
+
+    .faq-header{
+        margin-bottom:20px ;
+    }
+
+    .faq-header h2{
+        font-size:30px ;
+    }
+
+    .faq-header p{
+        font-size:14px ;
+    }
+}
