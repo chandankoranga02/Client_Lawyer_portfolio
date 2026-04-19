@@ -1,9 +1,6 @@
-
-const PUBLIC_KEY = "123";
-const SERVICE_KEY = "123";
-const TEMPLATE_KEY = "123";
-
-
+const PUBLIC_KEY = "dIuGsXL9RJIWm4bi6";
+const SERVICE_KEY = "service_nsb08tq";
+const TEMPLATE_KEY = "template_nvdtaoq";
 
 emailjs.init(PUBLIC_KEY);
 
@@ -18,10 +15,7 @@ contactForm.addEventListener("submit", function (e) {
     const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    // Email Validation
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    // Indian Mobile Validation (10 digits, starts with 6-9)
     const mobilePattern = /^[6-9]\d{9}$/;
 
     if (!emailPattern.test(email)) {
@@ -35,32 +29,59 @@ contactForm.addEventListener("submit", function (e) {
     }
 
     const btn = contactForm.querySelector("button");
+
+    /* SENDING STATE */
     btn.innerText = "Sending...";
     btn.disabled = true;
+    btn.style.background = "#f59e0b";   // orange
+    btn.style.color = "#000";
+    btn.style.cursor = "not-allowed";
 
     const templateParams = {
-        fullname: fullname,
-        subject: subject,
-        mobile: mobile,
-        email: email,
-        message: message
+        fullname,
+        subject,
+        mobile,
+        email,
+        message
     };
 
-    emailjs.send(
-        SERVICE_KEY,
-        TEMPLATE_KEY,
-        templateParams
-    )
-        .then(function () {
-            alert("Message sent successfully!");
-            contactForm.reset();
-        })
-        .catch(function (error) {
-            alert("Failed to send message.");
-            console.log(error);
-        })
-        .finally(function () {
+    emailjs.send(SERVICE_KEY, TEMPLATE_KEY, templateParams)
+
+    .then(() => {
+
+        /* SUCCESS STATE */
+        btn.innerText = "Sent ✓";
+        btn.style.background = "#16a34a";   // green
+        btn.style.color = "#fff";
+
+        contactForm.reset();
+
+        setTimeout(() => {
             btn.innerText = "Send Message";
             btn.disabled = false;
-        });
+            btn.style.background = "";
+            btn.style.color = "";
+            btn.style.cursor = "pointer";
+        }, 2500);
+
+    })
+
+    .catch((error) => {
+        console.error(error);
+
+        /* FAILED STATE */
+        btn.innerText = "Failed ✕";
+        btn.style.background = "#dc2626";   // red
+        btn.style.color = "#fff";
+
+        setTimeout(() => {
+            btn.innerText = "Send Message";
+            btn.disabled = false;
+            btn.style.background = "";
+            btn.style.color = "";
+            btn.style.cursor = "pointer";
+        }, 2500);
+
+    });
+
 });

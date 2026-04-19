@@ -483,3 +483,55 @@ font-size:16px;
         font-size:14px;
     }
 }
+
+/* NAVBAR WHATSAPP CONTACT */
+
+.nav-whatsapp{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 16px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:700;
+    color:#25D366 !important;
+    border:1px solid rgba(37,211,102,.22);
+    background:rgba(37,211,102,.05);
+    transition:.3s ease;
+}
+
+.nav-whatsapp i{
+    font-size:20px;
+    color:#25D366;
+}
+
+.nav-whatsapp span{
+    color:#fff;
+    font-weight:600;
+}
+
+.nav-whatsapp:hover{
+    transform:translateY(-2px);
+    background:rgba(37,211,102,.12);
+    border-color:rgba(37,211,102,.45);
+}
+
+/* tablet */
+@media(max-width:992px){
+.nav-whatsapp span{
+    font-size:14px;
+}
+}
+
+/* mobile */
+@media(max-width:768px){
+
+.nav-whatsapp{
+    width:100%;
+    justify-content:flex-start;
+    border-radius:0;
+    padding:16px 22px;
+}
+
+}

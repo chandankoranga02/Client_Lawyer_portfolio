@@ -1,206 +1,255 @@
 /* ===================================
-            FAQ SECTION
+   FAQ SECTION - CLEAN OPTIMIZED CSS
 =================================== */
 
 .faq-section{
-    background: #000000;
-    padding: 100px 8%;
-    color: #fff;
+    background:#000;
+    color:#fff;
+    padding:45px 8% 90px;
+    margin-top:0;
 }
 
+/* ================= HEADER ================= */
+
 .faq-header{
-    text-align: center;
-    max-width: 850px;
-    margin: auto;
-    margin-bottom: 60px;
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 38px;
 }
 
 .faq-header h2{
-    font-size: 54px;
-    font-family: Georgia, serif;
-    margin-bottom: 16px;
+    font-size:54px;
+    font-family:Georgia, serif;
+    line-height:1.05;
+    margin-bottom:12px;
 }
 
 .faq-header p{
-    font-size: 18px;
-    color: #cfcfcf;
-    line-height: 1.8;
+    font-size:18px;
+    color:#cfcfcf;
+    line-height:1.8;
+    margin:0;
 }
 
-/* Container */
+/* ================= CONTAINER ================= */
 
 .faq-container{
-    max-width: 950px;
-    margin: auto;
+    max-width:950px;
+    margin:auto;
 }
 
-/* Item */
+/* ================= ITEM ================= */
 
 .faq-item{
-    border: 1px solid rgba(255,193,7,0.14);
-    border-radius: 14px;
-    margin-bottom: 18px;
-    overflow: hidden;
-    background: linear-gradient(180deg,#141414,#101010);
+    background:linear-gradient(180deg,#141414,#101010);
+    border:1px solid rgba(255,193,7,.14);
+    border-radius:14px;
+    margin-bottom:16px;
+    overflow:hidden;
 }
 
-/* Question */
+/* ================= QUESTION ================= */
 
 .faq-question{
-    width: 100%;
-    background: transparent;
-    color: #fff;
-    border: none;
-    outline: none;
-    padding: 24px 28px;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: left;
-    cursor: pointer;
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:#fff;
+    padding:22px 26px;
+    font-size:20px;
+    font-weight:600;
+    text-align:left;
+    cursor:pointer;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .faq-icon{
-    font-size: 28px;
-    color: #ffc107;
-    transition: 0.3s ease;
+    font-size:28px;
+    color:#ffc107;
+    transition:.3s ease;
+    flex-shrink:0;
+    margin-left:15px;
 }
 
-/* Answer */
+/* ================= ANSWER ================= */
 
 .faq-answer{
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.4s ease;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .35s ease;
 }
 
 .faq-answer p{
-    padding: 0 28px 24px;
-    color: #cfcfcf;
-    font-size: 16px;
-    line-height: 1.8;
+    padding:0 26px 22px;
+    font-size:16px;
+    color:#cfcfcf;
+    line-height:1.75;
 }
 
-/* Active */
+/* ================= ACTIVE ================= */
 
 .faq-item.active .faq-answer{
-    max-height: 220px;
+    max-height:220px;
 }
 
 .faq-item.active .faq-icon{
-    transform: rotate(45deg);   /* + becomes x style */
+    transform:rotate(45deg);
 }
 
-/* Responsive */
+/* ================= TABLET ================= */
 
-@media(max-width:768px){
+@media(max-width:992px){
 
 .faq-section{
-    padding: 70px 5%;
+    padding:28px 6% 75px;
+}
+
+.faq-header{
+    margin-bottom:30px;
 }
 
 .faq-header h2{
-    font-size: 38px;
+    font-size:42px;
 }
 
 .faq-header p{
-    font-size: 16px;
+    font-size:16px;
 }
 
 .faq-question{
-    font-size: 17px;
-    padding: 20px;
+    font-size:18px;
+    padding:20px 22px;
 }
 
 .faq-answer p{
-    padding: 0 20px 20px;
+    padding:0 22px 20px;
 }
 
 }
 
-/* ===== FAQ GAP FIX (Single Copy Paste - END of faq.css) ===== */
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
 
 .faq-section{
-    padding:45px 8% 90px ;   /* top gap reduced */
-    margin-top:0 ;
+    padding:10px 5% 55px;
 }
 
-/* Header tighter */
 .faq-header{
-    margin-bottom:38px ;
+    margin-bottom:24px;
 }
 
 .faq-header h2{
-    margin-top:0 ;
-    margin-bottom:10px ;
-    line-height:1.05 ;
+    font-size:34px;
+    margin-bottom:8px;
 }
 
 .faq-header p{
-    margin-top:0 ;
+    font-size:15px;
+    line-height:1.65;
 }
 
-/* ===== TABLET ===== */
-@media(max-width:992px){
-
-    .faq-section{
-        padding:28px 6% 75px ;
-    }
-
-    .faq-header{
-        margin-bottom:30px ;
-    }
-
-    .faq-header h2{
-        font-size:42px ;
-    }
+.faq-item{
+    margin-bottom:14px;
 }
 
-/* ===== MOBILE ===== */
-@media(max-width:768px){
-
-    .faq-section{
-        padding:10px 5% 55px ;   /* almost no top gap */
-    }
-
-    .faq-header{
-        margin-bottom:24px ;
-    }
-
-    .faq-header h2{
-        font-size:34px ;
-        margin-bottom:8px ;
-    }
-
-    .faq-header p{
-        font-size:15px ;
-        line-height:1.65 ;
-    }
-
-    .faq-item{
-        margin-bottom:14px ;
-    }
+.faq-question{
+    font-size:17px;
+    padding:18px 18px;
 }
 
-/* ===== SMALL MOBILE ===== */
+.faq-answer p{
+    padding:0 18px 18px;
+    font-size:15px;
+}
+
+.faq-icon{
+    font-size:24px;
+}
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
 @media(max-width:480px){
 
-    .faq-section{
-        padding:0px 14px 45px ;
-    }
+.faq-section{
+    padding:0 14px 45px;
+}
 
-    .faq-header{
-        margin-bottom:20px ;
-    }
+.faq-header{
+    margin-bottom:20px;
+}
 
-    .faq-header h2{
-        font-size:30px ;
-    }
+.faq-header h2{
+    font-size:30px;
+}
 
-    .faq-header p{
-        font-size:14px ;
-    }
+.faq-header p{
+    font-size:14px;
+}
+
+.faq-question{
+    font-size:16px;
+    padding:16px;
+}
+
+.faq-answer p{
+    padding:0 16px 16px;
+    font-size:14px;
+}
+
+}
+
+/* FAQ + FOOTER WHITE GAP REMOVE */
+/* CSS ke sabse END me paste karo */
+
+/* remove section spacing */
+.faq-section{
+    margin-bottom:0 !important;
+    padding-bottom:0 !important;
+}
+
+footer,
+.footer{
+    margin-top:0 !important;
+    padding-top:0 !important;
+}
+
+/* remove accidental hr line */
+hr{
+    display:none !important;
+    margin:0 !important;
+    padding:0 !important;
+    border:none !important;
+}
+
+/* remove body white strip */
+body{
+    margin:0;
+    padding:0;
+    background:#000;
+}
+
+/* if wrapper exists */
+section{
+    margin-bottom:0 !important;
+}
+
+/* mobile fix */
+@media(max-width:768px){
+
+.faq-section{
+    padding-bottom:0 !important;
+}
+
+footer,
+.footer{
+    padding-top:0 !important;
+}
+
 }
